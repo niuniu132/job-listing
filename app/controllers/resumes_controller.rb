@@ -3,6 +3,11 @@ class ResumesController < ApplicationController
 
 before_action :authenticate_user!
 
+  def index
+    @job = Job.find(params[:job_id])
+    @resumes = Resume.where(:id => @job)
+  end
+
   def new
     @job = Job.find(params[:job_id])
     @resume = Resume.new()
