@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="utf-8">
   <head>
-    <title>Job Listing</title>
+    <!-- <link rel="icon" href="~/railsbridge/job-listing/public/favicon.ico"> -->
+
+    <title>泥娃娃招聘网</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="../../js/bootstrap.min.js"></script>
 
 
-    <link href="../../css/bootstrap.min.css" media="all" rel="stylesheet" />
 
-    <link href="" rel="stylesheet">
+
+
+
 
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="/images/baby.ico">
   </head>
   <body>
       <div class="container-fluid">
+       <div class="row">
         <%= render "common/navbar" %>
+      </div>
         <%= render "common/flashes" %>
         <%= yield %>
       </div>

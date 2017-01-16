@@ -16,4 +16,5 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require bootstrap
+//= require bootstrap.min.js
 //= require_tree .
