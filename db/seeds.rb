@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+#admin= User.create(email:'11')
 job1= Job.create(title:'销售工程师',description:'岗位职责：
 1.   全面参与公司产品、技术营销，偏重技术层面；
 2.   合理利用和维护公司客户资源，掌握变电检修计划申报流程，跟进所辖区域计划的上报情况，深度推动项目促成；
