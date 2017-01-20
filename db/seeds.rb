@@ -65,3 +65,5 @@ job5= Job.create(title:'python开发工程师',description:'任职要求：
 1. 2年PYTHON开发经验。
 2、有自动化部署经验的优先
 3、聪明、好学，能适应加班。', created_at:nil, updated_at:nil,wage_upper_bound:15000, wage_lower_bound:10000)
+
+user = User.create(email:'11@11.com', password:'111111', password_confirmation:'111111',is_admin: true)
