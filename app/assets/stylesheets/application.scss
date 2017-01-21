@@ -18,16 +18,58 @@
  @import "bootstrap";
  @import "font-awesome";
 
+ .container-fluid .jumbotron{
+   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
+   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+   border-radius: 0;//圆角为0
+ }
+
+ .navbar-default .navbar-brand {
+   color: #A1887F;//字体颜色
+   padding: 10px 15px;//上下10px,左右15px
+   line-height: 30px;//文字行高
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FF6F00;//鼠标放置在链接上的文字颜色
+  background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
+}
+
+ ul.btn {
+    font-size: 22px;
+    color: #A1887F;
+    padding: 10px 15px;//上下10px,左右15px
+    line-height: 30px;//文字行高
+ }
+ .navbar-brand > img {
+     display: inline-block;	//图片和链接文字显示在同一行
+     margin-right: 10px; //图片和链接文字拉开一点距离
+     width: 32px; //定制图片宽度
+     height: 32px; //定制图片高度
+ }
+
+ .navbar{
+   background-color: #212121;
+   margin: 0;
+   font-size:  20px;
+   border-color: black
+ }
+ .navbar-brand{
+   font-size:  22px;
+
+ }
  .jumbotron {
-   background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
+   background-image:url('http://www.digitalistmag.com/files/2014/12/image-career-success-BIG.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 110px;
+   margin-top: 0
  }
 
  .title {
    font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
-   text-align: center;
+   text-align: left;
    margin-top: 200px;
    margin-bottom: 80px;
  }
@@ -35,8 +77,8 @@
  .slogan {
    margin-top: 10px;
    margin-bottom: 50px;
-   text-align: center;
-   color: white;
+   text-align: left;
+   color: #A1887F;
    top: 12px;
  }
 
